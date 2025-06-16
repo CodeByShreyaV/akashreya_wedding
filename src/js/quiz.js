@@ -1,15 +1,86 @@
 var counter = 0;
 var right = 0;
 var questions = [
-    ["Where did Maya and Keshal meet?", "Spring break, Miami - cliché, we know", "At Columbia University, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Anthropology class Keshal took while at Columbia. It was called 'Magic, Witchcraft and Religion'. He thought it 'sounded cool'.", "1"],
-    ["How long have they been together?", "6 years", "7 years", "8 years", "An eternity. Seriously, what took them so long?", "4"],
-    ["How long were they in a long distance relationship?", "They were in a long distance relationship??", "3 years", "4 years", "5 years", "4"],
-    ["Where did they get engaged?", "Miami, Florida - where it all began", "Lisbon, Portugal - Maya thought it was a vacation with Keshal's family", "Boston, Massachusetts - on a random Sunday, with Otis Redding on the record player, over brunch", "New York City, New York - it was a full on flash mob", "2"],
-    ["Who is the bride-zilla between the two?", "Keshal", "Maya", "1"],
-    ["What is their preferred term of endearment?", "Boo", "Babe", "Hon", "Dear", "1"],
-    ["Which of these is a nickname Maya has for Keshal?", "Schmoomoo", "Boo Radley", "KP", "Keshal Facial", "All of the above", "5"],
-    ["Which of these is a nickname Keshal has for Maya? ", "Clown", "Ma", "Booface", "Garfield", "All of the above", "5"],
-    ["Over the years, Maya and Keshal have had a lot of adventures together. What <i>haven't</i> they done together?", "Climbed a volcano", "Scuba dived in fresh water caves", "Taken a woodworking class", "Gone to a music festival", "All of the above", "3"]
+  [
+    "When did Shreya and Akash start dating?",
+    "2010",
+    "2012",
+    "2014",
+    "2016",
+    "3",
+  ],
+  [
+    "How did Shreya and Akash meet?",
+    "School friends turned lovers",
+    "Met online playing Pokémon",
+    "College project partners",
+    "Family arranged meeting (surprise!)",
+    "1",
+  ],
+  [
+    "Where did they get engaged?",
+    "LOL, did they though?",
+    "Coming soon... maybe... possibly... hopefully?",
+    "Shreya keeps crying about it (just a little)",
+    "Probably after the wedding because logic is overrated",
+    "4",
+  ],
+  [
+    "Who is smarter?",
+    "Akash—silent killer of competitive exams",
+    "Shreya—she emotionally outsmarts *everyone*",
+    "Depends—math test or handling human drama?",
+    "Neither—they just Google it together",
+    "3",
+  ],
+  [
+    "Who is more likely to cry during the wedding vows?",
+    "Shreya, 100%. Probably while writing this quiz too",
+    "Akash? Please. He might blink slowly though",
+    "No one cries, only dramatic eye-rolls",
+    "Everyone else will cry. These two will roast each other",
+    "1",
+  ],
+  [
+    "Who cooks better?",
+    "Akash—makes 1 dish and lives off the glory for a year",
+    "Shreya—she experiments, survives, and thrives",
+    "Uber Eats, tbh",
+    "Cooking is a shared trauma bonding activity",
+    "2",
+  ],
+  [
+    "Who made the first move?",
+    "Shreya—bold, brave, Bollywood-core",
+    "Akash—smooth like sandpaper",
+    "It just ‘happened’ (read: mutual stalking)",
+    "Their friends shipped it before they did",
+    "3",
+  ],
+  [
+    "Who’s the better gift-giver?",
+    "Shreya—Pinterest boards and emotional blackmail",
+    "Akash—surprisingly good, when he remembers",
+    "They both just ask what the other wants. Zero risk.",
+    "Gifts? Nah, trauma bonding is free",
+    "2",
+  ],
+  [
+    "Who’s better with directions?",
+    "Shreya—Google Maps is her soulmate",
+    "Akash—he *is* Google Maps (but with attitude)",
+    "They both get lost together and call it 'an adventure'",
+    "Neither—they just end up arguing and going home",
+    "2",
+  ],
+  [
+    "How will the proposal go down?",
+    "Akash will fake Shreya out 3 times first",
+    "Shreya will accidentally propose while venting",
+    "Probably during a walk. With a dog. And snacks.",
+    "We’ll know when Shreya stops whining about it",
+    "4",
+  ],
 ];
 
 $(document).ready(function () {
@@ -38,13 +109,13 @@ $(document).ready(function () {
                     var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got all " + right +"/9 right.</strong></br><div class='is-size-5'> Wow! You got them all right! There's no way you're not a stalker. Not that you need it, but scroll down to read the full story!</div></div>").hide();
                 }
                 else if (right >= 7){
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Maya and Keshal... or you're a stalker. Scroll down for the full story!</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Akash and Shreya... or you're a stalker. Scroll down for the full story!</div></div>").hide();
                 }
                 else if (right < 7 && right >= 3){
                     var result = $("<div id='question' class='field is-size-4'><strong class='orange'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> You've got some work to do! Scroll down and read up...</div></div>").hide();
                 }
                 else {
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Maya and Keshal!? Scroll down and take notes...</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Akash and Shreya!? Scroll down and take notes...</div></div>").hide();
                 }
                 $('#couple-20').replaceWith('<div id="couple-20" class="column is-4 is-offset-1"><p class="title is-2 "><span class="rsvp-label">Your Results</span></p></div>');
                 $('#question').replaceWith(result);
