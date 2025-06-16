@@ -72,7 +72,6 @@ html, body {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 110px;
   width: 100%;
   line-height: 150px;
   -webkit-transition: height .5s, line-height .5s;
@@ -115,6 +114,8 @@ html, body {
 
 .logo {
   color: #d72185;
+  padding: 5px;
+  background-color: white;
 }
 
 .column-couple-text {
@@ -176,20 +177,6 @@ p {
   line-height: 1.6em;
 }
 
-.the-couple {
-  background-image: url("../images/c-background.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.schedule {
-  background-image: url("../images/c-background.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
 .quiz {
   background-image: url("../images/geometry.png");
 }
@@ -199,7 +186,7 @@ p {
 }
 
 #main {
-  background-image: url("../images/c-3-color.jpg");
+  background-image: url("../images/willow.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
