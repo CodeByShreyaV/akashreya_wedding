@@ -4325,7 +4325,7 @@ a.box:active {
 }
 
 .field:not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 20px;
 }
 
 .field.has-addons {

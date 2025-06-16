@@ -14,18 +14,18 @@
 
 
 
-  <title>M&K - RSVP</title>
+  <title>A&S - RSVP</title>
 
   <meta charset="utf-8">
   <meta property="og:title" content="M&K - RSVP" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://mayaandkeshal.com/rsvp.html" />
-  <meta property="og:description" content="The wedding of Maya and Keshal" />
-  <meta property="og:image" content="http://mayaandkeshal.com/images/c-3-color.jpg" />
+  <meta property="og:url" content="http://AkashandShreya.com/rsvp.html" />
+  <meta property="og:description" content="The wedding of Akash and Shreya" />
+  <meta property="og:image" content="http://AkashandShreya.com/images/c-3-color.jpg" />
   <meta property="fb:admins" content="prit4k" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="The wedding of Maya and Keshal" />
+  <meta name="description" content="The wedding of Akash and Shreya" />
   <meta name="keywords" content="Wedding, Indian, Sri Lanka, India, Marriage, Wife, Husband">
   <meta name="author" content="Pritak Patel">
 
@@ -48,7 +48,8 @@
     <div class="modal-content animated bounceIn">
       <div class="notification is-link">
         <button id="modal-close" class="delete"></button>
-        Your presence is present enough. Seriously. But for the stubborn among you, we simply ask that you don't bring boxed gifts
+        Your presence is present enough. Seriously. But for the stubborn among you, we simply ask that you don't bring
+        boxed gifts
         since we will be so far from home!
       </div>
     </div>
@@ -57,7 +58,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a id="logo" class="navbar-item" href="index.html">
-          <strong class="logo">Maya & Keshal</strong>
+          <strong class="logo">Akash & Shreya</strong>
         </a>
         <div id="nav-toggle" class="navbar-burger">
           <span></span>
@@ -104,23 +105,78 @@
         <br>
 
         <div id="rsvp-box" class="box">
-          <div id="rsvp-initial">
+          <form id="rsvp-form">
             <div class="field">
-              <label class="label is-medium">Let's find your RSVP</label>
+              <label class="label">What should we call you?</label>
               <div class="control">
-                <input id="email-input" class="input is-medium" type="text" placeholder="Email address">
-              </div>
-              <p id="help-message" class="help">Enter the email address that your invitation was sent to</p>
-              <div class="field">
-                <p class="control">
-                  <button id="check-email" onclick="checkEmail()" class="button is-link is-medium">
-                    Continue
-                  </button>
-                </p>
+                <input class="input" type="text" name="name" required>
               </div>
             </div>
-          </div>
+
+            <div class="field">
+              <label class="label">Best email to send memes and updates</label>
+              <div class="control">
+                <input class="input" type="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">For the love of God, please come!</label>
+              <div class="control">
+                <div class="select">
+                  <select name="attendance" required>
+                    <option value="" disabled selected>Choose the first option</option>
+                    <option value="Yes">Heck yes, wouldn’t miss it for the world!</option>
+                    <option value="No">Sorry, I'm a ditcher but I’ll send a gift for sure!</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Bringing someone special along?</label>
+              <div class="control">
+                <div class="select">
+                  <select name="plusOne" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Yes">Hell yes, bringing my partner in crime!</option>
+                    <option value="No">Nope, sad and lonely but excited!</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label">Which day(s) can we count on your presence?</label>
+              <div class="control">
+                <div class="select">
+                  <select name="day" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Both 24 & 25">Both November 24 & 25</option>
+                    <option value="Only 25">Only November 25</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Drop your love notes or sneaky questions here (optional but DO IT)!</label>
+              <div class="control">
+                <textarea class="textarea" name="message" placeholder="Anything you'd like to share?"></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-link" type="submit">Submit RSVP</button>
+              </div>
+            </div>
+
+            <p id="rsvp-status" class="has-text-success"></p>
+          </form>
         </div>
+
       </div>
     </div>
     </div>
@@ -130,14 +186,14 @@
       <center>
         Designed & developed with love by Pritak
         <br> For any questions and/or concerns please email
-        <a href="mailto:hello@mayaandkeshal.com">hello@mayaandkeshal.com</a>
+        <a href="mailto:hello@AkashandShreya.com">hello@AkashandShreya.com</a>
       </center>
     </div>
   </section>
 
   <!--<Deject>-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="../node_modules/airtable/build/airtable.browser.js"></script>
   <script src="js/scroll-animations.js"></script>
