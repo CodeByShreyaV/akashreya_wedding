@@ -1,7 +1,6 @@
 document.getElementById("nav-toggle").addEventListener("click", toggleNav);
 document.getElementById("main-menu").addEventListener("click", toggleNav);
 document.getElementById("logo").addEventListener("click", toggleNav);
-document.getElementById("registry-click").addEventListener("click", registryModal);
 document.getElementById("modal-close").addEventListener("click", registryModal);
 
 function registryModal() {
