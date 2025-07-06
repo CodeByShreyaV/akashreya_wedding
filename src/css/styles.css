@@ -147,7 +147,6 @@ body {
 .logo {
   color: #d72185;
   padding: 5px;
-  background-color: white;
 }
 
 .column-couple-text {
@@ -294,13 +293,13 @@ p {
 
 @media (orientation: portrait) and (min-width: 600px) {
   #main {
-    background-image: url("../images/c-3-color-slim-ipad.jpg");
+    background-image: url("../images/willow-slim.jpeg");
   }
 }
 
 @media (orientation: portrait) and (max-width: 600px) {
   #main {
-    background-image: url("../images/c-3-color-slim.jpg");
+    background-image: url("../images/willow-slim.jpeg");
   }
 }
 
