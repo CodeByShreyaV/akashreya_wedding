@@ -1,12 +1,12 @@
 {
-  "name": "mayaandkeshal.com",
+  "name": "akashreya.com",
   "version": "1.0.0",
-  "homepage": "http://mayaandkeshal.com",
-  "description": "The wedding of Maya and Keshal",
+  "homepage": "http://akashreya.com",
+  "description": "The wedding of Akash and Shreya",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "http://github.com/pritak/mayaandkeshal.com.git"
+    "url": "http://github.com/codebyShreyaV/akashreya.com.git"
   },
   "dependencies": {
     "airtable": "^0.5.2",
@@ -30,12 +30,12 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./dist --domain mayaandkeshal.com"
+      "pre-push": "surge --project ./dist --domain akashreya.com"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pritak Patel",
+  "author": "Shreya Vinchankar",
   "license": "ISC"
 }
