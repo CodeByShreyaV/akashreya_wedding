@@ -1127,6 +1127,14 @@ a.has-text-info:focus {
   color: #0f81cc !important;
 }
 
+.rsvp-success {
+  color: #23d160; 
+  font-size: 1.1rem; 
+  text-align: center; 
+  margin-top: 1.5rem; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .has-text-success {
   color: #23d160 !important;
 }
